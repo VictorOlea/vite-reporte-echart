@@ -22,7 +22,7 @@ option = {
       type: 'shadow'
     }
   },
-  legend: {},
+  legend: {textStyle:{color: "rgba(255, 255, 255, 0.87)"}},
   grid: {
     left: '3%',
     right: '4%',
@@ -32,10 +32,12 @@ option = {
   xAxis: {
     type: 'value',
     boundaryGap: [0, 0.01],
+    axisLabel: {color: "rgba(255, 255, 255, 0.87)"}
   },
   yAxis: {
     type: 'category',
-    data: ['Planta A', 'Planta B', 'Planta C', 'Planta D', 'Planta E', 'Total Planta']
+    data: ['Planta A', 'Planta B', 'Planta C', 'Planta D', 'Planta E', 'Total Planta'],
+    axisLabel: {color: "rgba(255, 255, 255, 0.87)"}
   },
   series: [
     {
@@ -80,10 +82,15 @@ var myChart = echarts.init(chartDom);
 var option: PieEChartsOption;
 
 option = {
+  legend: {textStyle:{color: "rgba(255, 255, 255, 0.87)"}},
+  tooltip: {
+    trigger: 'item',
+    formatter: '{d}%',
+  },
   dataset: [
     {
       source: [
-        ['Product', 'Sales', 'Price', 'Year'],
+        ['Planta', 'Sales', 'Price', 'Year'],
         ['Planta A', 123, 32, 2022],
         ['Planta B', 231, 14, 2022],
         ['Planta C', 235, 5, 2022],
@@ -114,14 +121,20 @@ option = {
       type: 'pie',
       radius: 150,
       center: ['50%', '25%'],
-      datasetIndex: 1
+      datasetIndex: 1,
+      label: {
+        position: 'outside', 
+        color:"rgba(255, 255, 255, 0.87)"},
     },
     {
       type: 'pie',
       radius: 150,
       center: ['50%', '50%'],
-      datasetIndex: 2
-    }
+      datasetIndex: 2,
+      label: {
+        position: 'outside', 
+        color:"rgba(255, 255, 255, 0.87)"},
+    },
   ],
 
   // Optional. Only for responsive layout:
