@@ -107,3 +107,20 @@ button:focus-visible {
   height: 70vh;
   width: 80%;
 }
+
+#chart-bar {
+  margin: auto;
+  height: 50vh;
+  width: 40%;
+}
+
+#chart-info {
+  margin: 1rem;
+  height: 50vh;
+  width: 40%;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+}
