@@ -1,6 +1,6 @@
 import * as echarts from "echarts";
 
-export function chartBar() {
+export function chartBar(data: Array<number>): void {
   // Create the echarts instance
   var myChart = echarts.init(document.getElementById("chart-bar"));
 
@@ -29,7 +29,8 @@ export function chartBar() {
       {
         name: "",
         type: "bar",
-        data: [30, 40, 81, 100, 50, 61],
+        //data: [30, 40, 81, 100, 50, 61],
+        data: data,
       },
     ],
   });

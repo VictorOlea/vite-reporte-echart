@@ -124,3 +124,8 @@ button:focus-visible {
   display: flex;
   align-items: center;
 }
+
+#chart-button {
+  margin: auto;
+  width: 50%;
+}

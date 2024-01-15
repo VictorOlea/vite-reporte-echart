@@ -1,6 +1,6 @@
 import * as echarts from "echarts";
 
-export function pieCharts() {
+export function pieCharts(): void {
   type PieEChartsOption = echarts.EChartsOption;
 
   var chartDom = document.getElementById("chart-pie")!;

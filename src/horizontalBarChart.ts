@@ -1,6 +1,6 @@
 import * as echarts from "echarts";
 
-export function horizontalBarChart() {
+export function horizontalBarChart(): void {
     type EChartsOption = echarts.EChartsOption;
 
     var chartDom = document.getElementById('chart-container')
