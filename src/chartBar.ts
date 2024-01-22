@@ -7,7 +7,7 @@ export function chartBar(data: Array<number>): void {
   // Draw the chart
   myChart.setOption({
     title: {
-      text: "Producción por Planta",
+      text: "Detenciones por Planta",
       textStyle: { color: "rgba(255, 255, 255, 0.87)" },
       left: 'center'
     },
